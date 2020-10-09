@@ -4958,3 +4958,4 @@ Did you mean one of these?
 #53 /Users/Paul/Desktop/Dev/PHP/wendeluvinga.com/server.php(21): require_once('/Users/Paul/Des...')
 #54 {main}
 "} 
+[2020-10-09 04:55:29] local.ERROR: No Database connection yet in VoyagerServiceProvider loadAuth()  
