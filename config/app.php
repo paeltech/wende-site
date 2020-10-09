@@ -162,6 +162,8 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+        TCG\Voyager\VoyagerServiceProvider,
+
         /*
          * Package Service Providers...
          */
