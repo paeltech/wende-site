@@ -21,7 +21,7 @@ Route::get('/', function () {
 //Route::get('about', [AboutController::class, 'index']);
 Route::get('about/', function(){
     $content = TCG\Voyager\Models\Page::where('slug', '=', 'about-wende')->firstOrFail();
-    $audio = App\Models\Audio::all();
+    //$audio = App\Models\Audio::all();
 	return view('about', compact('content'), compact('audio'));
 });
 
@@ -44,7 +44,3 @@ Route::get('/text-books', function () {
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
-
-Route::get('/foo', function () {
-    Artisan::call('storage:link');
-    });
