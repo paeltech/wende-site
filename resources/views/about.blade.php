@@ -22,9 +22,6 @@
                 </div>
             </div>
             <hr>
-            @foreach ($audio as $audio)
-                            <li><span class="uk-label">{{ $audio->title }}</span></li>
-                        @endforeach
         </div>
 
     </div>
