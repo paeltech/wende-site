@@ -26,7 +26,7 @@ Route::get('about/', function(){
 });
 
 Route::get('/blog', function () {
-    $posts = TCG\Voyager\Models\Post::all()->orderBy('created_at');
+    $posts = TCG\Voyager\Models\Post::orderBy('created_at','desc')->get();
     $categories = TCG\Voyager\Models\Category::all();
     return view('blog', compact('posts'), compact('categories'));
 });
