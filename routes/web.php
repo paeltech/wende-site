@@ -44,3 +44,7 @@ Route::get('/text-books', function () {
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Route::get('/foo', function () {
+    Artisan::call('storage:link');
+    });
